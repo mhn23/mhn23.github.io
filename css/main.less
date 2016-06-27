@@ -167,35 +167,6 @@ body {
     }
     // .services end
     
-    .contact {
-        padding: @content-padding;
-        
-        h2 {
-            font-weight: 700;
-            margin-bottom: 1em;
-        }
-        
-        button {
-            padding: 10px;
-            width: 100%;
-            border: none;
-            background: @secondary-background;
-            color: @secondary-foreground;
-            
-            span {
-                font-weight: 700;
-                font-size: 1.1em;
-                text-transform: uppercase;
-            }
-            
-            &:hover {
-                background-color: @hover-background;
-                color: @hover-foreground;
-            }
-        }
-    }
-    // .contact end
-    
     .portfolio {
         padding: @content-padding;
         
@@ -228,6 +199,64 @@ body {
         }   
     }
     // .portfolio end
+    
+    .contact {
+        padding: @content-padding;
+        
+        h2 {
+            font-weight: 700;
+            margin-bottom: 1em;
+        }
+        
+        form {
+            
+            input[type="email"] {
+                padding: 10px;
+                width: 100%;
+                border: 1px solid @main-foreground;
+                background: @main-background;
+                color: @main-foreground;
+                font-weight: 700;
+
+                &:hover {
+                    background-color: @hover-background;
+                    color: @hover-foreground;
+                }
+            } 
+            
+            textarea {
+                padding: 10px;
+                width: 100%;
+                height: 100px;
+                border: 1px solid @main-foreground;
+                border-top: 0;
+                background: @main-background;
+                color: @main-foreground;
+                line-height: 1.4em;
+
+                &:hover {
+                    background-color: @hover-background;
+                    color: @hover-foreground;
+                }
+            } 
+            
+            input[type="submit"] {
+                padding: 10px;
+                width: 100%;
+                border: none;
+                background: @secondary-background;
+                color: @secondary-foreground;
+                font-weight: 700;
+                text-transform: uppercase;
+
+                &:hover {
+                    background-color: @hover-background;
+                    color: @hover-foreground;
+                }
+            }  
+        }
+    }
+    // .contact end
     
     .breadcrumbs {
         padding: @content-padding;

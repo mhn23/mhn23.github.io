@@ -97,7 +97,13 @@
                 <div class="wrapper">
                     <div class="contact">
                         <h2>Contact</h2>
-                        <button><span>mail me</span></button>
+                        <form action="http://formspree.io/martin.k.herrmann@me.com" method="POST">
+                            <input type="hidden" name="_subject" value="Anfrage: mhn23.github.io" />
+                            <input type="email" name="_replyto" placeholder="Your Mail Adress">
+                            <textarea name="body" placeholder="Message"></textarea>
+                            <input type="submit" value="Send">
+                            <input type="text" name="_gotcha" style="display:none" />
+                        </form>
                     </div>
                 </div>
                 

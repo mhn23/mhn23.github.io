@@ -171,6 +171,7 @@ body {
     height: 100px;
     border: 1px solid #000000;
     border-top: 0;
+    margin-bottom: -3px;
     background: #ffffff;
     color: #000000;
     line-height: 1.4em;
@@ -180,6 +181,7 @@ body {
     color: #ffffff;
   }
   .contact form input[type="submit"] {
+    margin-top: 1em;
     padding: 10px;
     width: 100%;
     border: none;
@@ -198,11 +200,15 @@ body {
     background-color: #000000;
   }
   .breadcrumbs h2 {
-    font-weight: 700;
-    margin-bottom: 1em;
+    margin-top: 6px;
+    font-weight: 400;
+    display: inline-block;
+    float: right;
   }
-  .breadcrumbs p {
-    line-height: 1.4em;
+  .breadcrumbs a {
+    margin-right: 20px;
+    display: inline-block;
+    padding: 0px;
   }
   .viewer {
     display: none;

@@ -1,4 +1,11 @@
 $(document).ready(function() {
+    
+    $(".nav li").click(function() {
+        var linkvalue = $(this).children().attr("name");
+        $('html, body').animate({
+            scrollTop: ($(linkvalue).offset().top -50)
+        }, 225);
+    });
    
     $(".nav li").last().css("margin-right", "0px");
     

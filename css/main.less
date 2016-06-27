@@ -60,6 +60,10 @@ body {
         width: 100%;
     }
     
+    .wrapper {
+        width: 100%;
+    }
+    
     .content {
 	    margin-top: 50px;
     }
@@ -78,17 +82,22 @@ body {
         background: @secondary-background;
         color: @secondary-foreground;
         font-size: 0;
-        padding: 17px 10px;
         
         li {
-            margin-right: 10px;
+            padding: 17px 10px;
+            height: 50px;
             font-size: 12pt;
             display: inline-block;
+            cursor: pointer;
+            
+            &:hover {
+                background-color: @hover-background;
+            }
+            
+            a {
+                cursor: inherit;
+            }
         }
-    }
-    
-    .wrapper {
-        width: 100%;
     }
     
     .persona {
